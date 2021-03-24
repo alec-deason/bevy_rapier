@@ -200,7 +200,7 @@ pub fn create_collider_renders_system(
                     ..Default::default()
                 };
 
-                commands.insert_bundle(entity, ground_pbr);
+                commands.entity(entity).insert_bundle(ground_pbr);
             }
         }
     }
